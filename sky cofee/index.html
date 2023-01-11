@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="#"><img src="img/logo.png" alt="skycoffee"></a>
+        </h1>
+    </header>
+    <div class="main-visual">
+        <picture>
+            <source media="(min-width: 768px)" srcset="img/pc_main-visual.jpg">
+            <!-- 幅768px以上なら表示 -->
+            <img src="img/sp_main-visual.jpg" alt="複数の青いカップ">
+        </picture>
+    </div><!-- main-visual -->
+
+    <nav class="gnav">
+        <ul>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">access</a></li>
+        </ul>
+    </nav>
+
+    <main class="wrapper">
+        <section class="content">
+            <div class="imgBox">
+                <img src="img/concept.jpg" alt="青いカップ">
+            </div><!-- imgBox -->
+
+            <div class="textBox">
+                <p class="subtitle">Concept</p>
+                <h2 class="contentTitle">心静かにコーヒーを</h2>
+                <p class="mainText">立ち止まって、<br>空の青さを眺めて、<br>一息つきましょう
+                </p>
+            </div><!-- textBox -->
+
+        </section><!-- content -->
+
+        <section class="blog">
+            <h2 class="blogtitle">blog</h2>
+            <p class="blogsubtitle">ブログ</p>
+            <div class="grid">
+                <div class="item"><img src="img/thumbnail01.jpg" alt="">
+                    <p class="gridtext">コーヒーカー始めました。</p>
+                    <p class="gridsubtext">2030.08.08</p>
+                </div>
+
+                <div class="item"><img src="img/thumbnail02.jpg" alt="">
+                    <p class="gridtext">濃厚クリーミーなミルクをどうぞ</p>
+                    <p class="gridsubtext">2030.08.05</p>
+                </div>
+
+                <div class="item"><img src="img/thumbnail03.jpg" alt="">
+                    <p class="gridtext">Sky Coffeeのオリジナル曲が完成！無料ダウン
+                        <br>ロード可能です。</p>
+                    <p class="gridsubtext">2030.08.02</p>
+                </div>
+
+                <div class="item"><img src="img/thumbnail04.jpg" alt="">
+                    <p class="gridtext">ハイキング用のコーヒーを販売中です。</p>
+                    <p class="gridsubtext">2030.07.28</p>
+                </div>
+
+                <div class="item"><img src="img/thumbnail05.jpg" alt="">
+                    <p class="gridtext">ショップの壁を塗ってみました。</p>
+                    <p class="gridsubtext">2030.07.27</p>
+                </div>
+
+                <div class="item"><img src="img/thumbnail06.jpg" alt="">
+                    <p class="gridtext">ブログをはじめました。</p>
+                    <p class="gridsubtext">2030.07.26</p>
+                </div>
+
+            </div><!-- grid -->
+            <button class="btn" type="button">ブログ一覧</button>
+        </section><!-- blog -->
+
+        <footer>
+            <a href="#"><img src="img/logo-white.png" alt=""></a>
+            <p class="copy">&copy;Sky Coffee 参考サイトhttps://webdesigner-go.com/coding-practice/</p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

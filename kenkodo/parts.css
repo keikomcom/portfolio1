@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*===========================================================*/
+/* 印象編 4 最低限おぼえておきたい動き*/
+/*===========================================================*/
+
+/*== 4-6　じわっ（ぼかしから出現） ==*/
+
+.blur{
+	animation-name: blurAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+	filter: blur(10px);
+	transform: scale(1.02);
+	opacity: 0;
+  }
+
+  to {
+	filter: blur(0);
+	transform: scale(1);
+	opacity: 1;
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+ 
+.blurTrigger{
+    opacity: 0;
+}
+
+
+
+/*===========================================================*/
+/* 印象編　8-11　テキストが1文字づつ出現*/
+/*===========================================================*/
+
+.eachTextAnime span{opacity: 0;}
+.eachTextAnime.appeartext span{ animation:text_anime_on 1s ease-out forwards; }
+@keyframes text_anime_on {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+/*===========================================================*/
+/* 印象編　6-1　スクロールすると1画面移動*/
+/*===========================================================*/
+.box{
+    padding: 40px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#box1{
+    background:url("../img/bg_02.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#box1.box{
+ justify-content: flex-start;
+}
+
+@media screen and (max-width:768px) { 
+    #box1.box{
+     justify-content: center;
+    } 
+}
+
+#box2{
+    background:url("../img/bg_03.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#box3{
+    background:url("../img/bg_04.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#box4{
+    background:url("../img/bg_05.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#box5{
+    background:url("../img/bg_06.jpg") no-repeat center;
+    background-size: cover;
+}
+
